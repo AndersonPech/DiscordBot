@@ -9,6 +9,7 @@ Wish someone a happy birthday via discord
 #MTA3ODY3MTQ0NDE3NjgwNTk1OA.GjjA55.gDgzSqCTVOnrtW077ymuOdlklY7hOjB02OhxBk
 
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+ONE_DAY = 86400
 
 
 '''
@@ -22,8 +23,13 @@ def ReadSheets():
 If there is someone with a bday today, wish them Hbday otherwise sleep for 24 hours
 '''
 def BirthdayCheck():
-    pass
-
+    if ReadSheets:
+        print(f'Message from')
+    
+    t = datetime.datetime.today()
+    t = t + datetime.timedelta(days=1)
+    future = datetime.datetime(t.year, t.month, t.day, 9, 0, 0)
+    #sleep(ONE_DAY)
 
 
 '''
