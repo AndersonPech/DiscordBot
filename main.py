@@ -1,6 +1,7 @@
 import discord
 import logging
 import datetime
+import pause
 
 '''
 Wish someone a happy birthday via discord
@@ -29,7 +30,7 @@ def BirthdayCheck():
     t = datetime.datetime.today()
     t = t + datetime.timedelta(days=1)
     future = datetime.datetime(t.year, t.month, t.day, 9, 0, 0)
-    #sleep(ONE_DAY)
+    pause.until(future)
 
 
 '''
