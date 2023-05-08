@@ -1,0 +1,59 @@
+import os.path
+
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
+
+SHEETS_ID = '17d-lf_XF3HuBT0oHL7ji8p5U8rqX3y9cF6swKrXTexs'
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+SAMPLE_RANGE_NAME = 'Bday'
+
+
+
+def fetch_data(date):
+    """Shows basic usage of the Sheets API.
+    Prints values from a sample spreadsheet.
+    """
+    creds = None
+    # The file token.json stores the user's access and refresh tokens, and is
+    # created automatically when the authorization flow completes for the first
+    # time.
+    if os.path.exists('token.json'):
+        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    # If there are no (valid) credentials available, let the user log in.
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            flow = InstalledAppFlow.from_client_secrets_file(
+                'credentials.json', SCOPES)
+            creds = flow.run_local_server(port=0)
+        # Save the credentials for the next run
+        with open('token.json', 'w') as token:
+            token.write(creds.to_json())
+
+    try:
+        service = build('sheets', 'v4', credentials=creds)
+
+        # Call the Sheets API
+        sheet = service.spreadsheets()
+        result = sheet.values().get(spreadsheetId=SHEETS_ID, range=SAMPLE_RANGE_NAME).execute()
+        values = result.get('values', [])
+
+        if not values:
+            print('No data found.')
+            return
+        
+        # TODO: Replace with filter view
+        birthday_people = []
+        for row in values:
+            row_split = row[1].split('/')
+            if (row_split[0] == date[0] and row_split[1] == date[1]):
+                birthday_people.append(row)
+        return birthday_people
+
+    except HttpError as err:
+        print(err)
+
