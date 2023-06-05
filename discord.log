@@ -1,263 +1,35 @@
-[2023-05-08 14:54:05] [INFO    ] discord.client: logging in using static token
-[2023-05-08 14:54:06] [DEBUG   ] discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
-[2023-05-08 14:54:06] [DEBUG   ] discord.http: GET /users/@me has found its initial rate limit bucket hash (f7ead6a7674e5a323d93786263b66cb1).
-[2023-05-08 14:54:06] [DEBUG   ] discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1078671444176805958', 'username': 'Happy Bday Bot', 'global_name': None, 'display_name': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd', 'discriminator': '9082', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'locale': 'en-US', 'mfa_enabled': False, 'premium_type': 0, 'linked_users': [], 'avatar_decoration': None, 'email': None, 'verified': True}
-[2023-05-08 14:54:06] [DEBUG   ] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me with None has returned 200
-[2023-05-08 14:54:06] [DEBUG   ] discord.http: GET /oauth2/applications/@me has found its initial rate limit bucket hash (f7ead6a7674e5a323d93786263b66cb1).
-[2023-05-08 14:54:06] [DEBUG   ] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me has received {'id': '1078671444176805958', 'name': 'Happy Bday Bot', 'icon': 'db1f1403ef67fd53a1d4e43671017a68', 'description': '', 'type': None, 'bot': {'id': '1078671444176805958', 'username': 'Happy Bday Bot', 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd', 'discriminator': '9082', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration': None, 'display_name': None, 'banner_color': None}, 'summary': '', 'bot_public': True, 'bot_require_code_grant': True, 'verify_key': 'b2b6cd4d0ea0a97f4fa5044431d5144decc793be8cee1e51fdd49198c6c11ccd', 'flags': 565248, 'hook': True, 'owner': {'id': '274059384194072577', 'username': 'Ando_', 'avatar': '287d3ee65ba383245622eee5261b8278', 'discriminator': '1646', 'public_flags': 0, 'flags': 0, 'banner': None, 'accent_color': 3162728, 'global_name': None, 'avatar_decoration': None, 'display_name': None, 'banner_color': '#304268'}, 'team': None}
-[2023-05-08 14:54:06] [DEBUG   ] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
-[2023-05-08 14:54:06] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-us-east1-c-77k4",{"micros":0.0}]']}}
-[2023-05-08 14:54:06] [DEBUG   ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
-[2023-05-08 14:54:07] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2023-05-08 14:54:07] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'Happy Bday Bot', 'mfa_enabled': False, 'id': '1078671444176805958', 'global_name': None, 'flags': 0, 'email': None, 'display_name': None, 'discriminator': '9082', 'bot': True, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd'}, 'session_type': 'normal', 'session_id': 'e0e27338bce05cb38c64624ef2cc9e4e', 'resume_gateway_url': 'wss://gateway-us-east1-c.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1080340361085464637'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['sydney', 'singapore', 'hongkong', 'japan', 'india'], 'application': {'id': '1078671444176805958', 'flags': 565248}, '_trace': ['["gateway-prd-us-east1-c-77k4",{"micros":107838,"calls":["id_created",{"micros":901,"calls":[]},"session_lookup_time",{"micros":249,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-281",{"micros":106335,"calls":["start_session",{"micros":63119,"calls":["discord-api-785656c5b6-j569w",{"micros":57178,"calls":["get_user",{"micros":14789},"get_guilds",{"micros":8826},"send_scheduled_deletion_message",{"micros":9},"guild_join_requests",{"micros":448},"authorized_ip_coro",{"micros":14}]}]},"starting_guild_connect",{"micros":46,"calls":[]},"presence_started",{"micros":275,"calls":[]},"guilds_started",{"micros":79,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":42759,"calls":[]},"connect_finished",{"micros":42763,"calls":[]},"build_ready",{"micros":22,"calls":[]},"clean_ready",{"micros":28,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]']}}
-[2023-05-08 14:54:07] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2023-05-08 14:54:07] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: e0e27338bce05cb38c64624ef2cc9e4e).
-[2023-05-08 14:54:07] [DEBUG   ] discord.client: Dispatching event connect
-[2023-05-08 14:54:07] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'safety_alerts_channel_id': None, 'explicit_content_filter': 0, 'system_channel_id': '1080340362075308084', 'nsfw': False, 'max_video_channel_users': 25, 'guild_scheduled_events': [], 'discovery_splash': None, 'stage_instances': [], 'unavailable': False, 'max_members': 500000, 'roles': [{'version': 1677643614068, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '137411140505153', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1080340361085464637', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1677643873068, 'unicode_emoji': None, 'tags': {'bot_id': '830530156048285716'}, 'position': 1, 'permissions': '66407488', 'name': 'Lofi Radio', 'mentionable': False, 'managed': True, 'id': '1080341448337145939', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1677645291534, 'unicode_emoji': None, 'tags': {'bot_id': '1078671444176805958'}, 'position': 1, 'permissions': '18432', 'name': 'Happy Bday Bot', 'mentionable': False, 'managed': True, 'id': '1080347397621829675', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}], 'incidents_data': None, 'lazy': True, 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'ZwNr6g'}, 'metadata': {'omitted': False, 'hash': '04G/Dg'}, 'channels': {'omitted': False, 'hash': 'Og4+Yw'}}, 'premium_progress_bar_enabled': False, 'vanity_url_code': None, 'latest_onboarding_question_id': None, 'description': None, 'icon': None, 'id': '1080340361085464637', 'home_header': None, 'application_id': None, 'embedded_activities': [], 'afk_channel_id': None, 'splash': None, 'mfa_level': 0, 'premium_subscription_count': 0, 'preferred_locale': 'en-US', 'system_channel_flags': 0, 'premium_tier': 0, 'threads': [], 'max_stage_video_channel_users': 50, 'nsfw_level': 0, 'members': [{'user': {'username': 'Happy Bday Bot', 'public_flags': 0, 'id': '1078671444176805958', 'global_name': None, 'display_name': None, 'discriminator': '9082', 'bot': True, 'avatar_decoration': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd'}, 'roles': ['1080347397621829675'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2023-03-01T04:34:51.564488+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}], 'large': False, 'joined_at': '2023-03-01T04:34:51.564488+00:00', 'rules_channel_id': None, 'features': [], 'banner': None, 'afk_timeout': 300, 'owner_id': '274059384194072577', 'emojis': [], 'region': 'deprecated', 'hub_type': None, 'channels': [{'version': 1677643614074, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '1080340362075308082', 'flags': 0}, {'version': 1677643614077, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '1080340362075308083', 'flags': 0}, {'version': 1677643614079, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1080340362075308082', 'name': 'general', 'last_message_id': '1080347398372597800', 'id': '1080340362075308084', 'flags': 0}, {'version': 1677643614087, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1080340362075308083', 'name': 'General', 'last_message_id': None, 'id': '1080340362075308085', 'flags': 0, 'bitrate': 64000}, {'version': 1677643898959, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '1080340362075308082', 'nsfw': False, 'name': 'bot', 'last_message_id': '1104994119627059230', 'id': '1080341556965417050', 'flags': 0}], 'member_count': 3, 'public_updates_channel_id': None, 'voice_states': [], 'application_command_counts': {'2': 1, '1': 18}, 'verification_level': 0, 'name': 'Test Server', 'default_message_notifications': 0, 'presences': [], 'stickers': []}}
-[2023-05-08 14:54:07] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2023-05-08 14:54:07] [DEBUG   ] discord.client: Dispatching event guild_available
-[2023-05-08 14:54:09] [DEBUG   ] discord.client: Dispatching event ready
-[2023-05-08 14:54:10] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 3, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2023-05-08T04:54:10.828000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['1080347397621829675'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2023-03-01T04:34:51.564488+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, 'id': '1104994635153158185', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': "It's Jin Woo Lee @Jin#4449  birthday today! Wish them a Happy Birthday!", 'components': [], 'channel_id': '1080341556965417050', 'author': {'username': 'Happy Bday Bot', 'public_flags': 0, 'id': '1078671444176805958', 'global_name': None, 'display_name': None, 'discriminator': '9082', 'bot': True, 'avatar_decoration': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd'}, 'attachments': [{'width': 600, 'url': 'https://cdn.discordapp.com/attachments/1080341556965417050/1104994634930864138/1.gif', 'size': 229908, 'proxy_url': 'https://media.discordapp.net/attachments/1080341556965417050/1104994634930864138/1.gif', 'id': '1104994634930864138', 'height': 600, 'filename': '1.gif', 'content_type': 'image/gif'}], 'guild_id': '1080340361085464637'}}
-[2023-05-08 14:54:10] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2023-05-08 14:54:10] [DEBUG   ] discord.client: Dispatching event message
-[2023-05-08 14:54:10] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1080341556965417050/messages with <aiohttp.formdata.FormData object at 0x7f0c4a778a30> has returned 200
-[2023-05-08 14:54:10] [DEBUG   ] discord.http: POST /channels/{channel_id}/messages has found its initial rate limit bucket hash (1d3c67957bcdccc6709861c232df8529).
-[2023-05-08 14:54:10] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1080341556965417050/messages has received {'id': '1104994635153158185', 'type': 0, 'content': "It's Jin Woo Lee @Jin#4449  birthday today! Wish them a Happy Birthday!", 'channel_id': '1080341556965417050', 'author': {'id': '1078671444176805958', 'username': 'Happy Bday Bot', 'global_name': None, 'display_name': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd', 'discriminator': '9082', 'public_flags': 0, 'bot': True, 'avatar_decoration': None}, 'attachments': [{'id': '1104994634930864138', 'filename': '1.gif', 'size': 229908, 'url': 'https://cdn.discordapp.com/attachments/1080341556965417050/1104994634930864138/1.gif', 'proxy_url': 'https://media.discordapp.net/attachments/1080341556965417050/1104994634930864138/1.gif', 'width': 600, 'height': 600, 'content_type': 'image/gif'}], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2023-05-08T04:54:10.828000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
-[2023-05-08 14:54:48] [DEBUG   ] discord.gateway: Keeping shard ID None websocket alive with sequence 3.
-[2023-05-08 14:54:58] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 10 seconds.
-Loop thread traceback (most recent call last):
-  File "main.py", line 57, in <module>
-    client.run(token, log_handler=handler, log_level=logging.DEBUG)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 860, in run
-    asyncio.run(runner())
-  File "/usr/lib/python3.8/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
-    self.run_forever()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
-    self._run_once()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
-    handle._run()
-  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 441, in _run_event
-    await coro(*args, **kwargs)
-  File "main.py", line 49, in on_ready
-    await BirthdayCheck()
-  File "main.py", line 40, in BirthdayCheck
-    await pause.until(future)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/pause/__init__.py", line 71, in until
-    sleep(diff / 2)
-
-[2023-05-08 14:55:08] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 20 seconds.
-Loop thread traceback (most recent call last):
-  File "main.py", line 57, in <module>
-    client.run(token, log_handler=handler, log_level=logging.DEBUG)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 860, in run
-    asyncio.run(runner())
-  File "/usr/lib/python3.8/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
-    self.run_forever()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
-    self._run_once()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
-    handle._run()
-  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 441, in _run_event
-    await coro(*args, **kwargs)
-  File "main.py", line 49, in on_ready
-    await BirthdayCheck()
-  File "main.py", line 40, in BirthdayCheck
-    await pause.until(future)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/pause/__init__.py", line 71, in until
-    sleep(diff / 2)
-
-[2023-05-08 14:55:18] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 30 seconds.
-Loop thread traceback (most recent call last):
-  File "main.py", line 57, in <module>
-    client.run(token, log_handler=handler, log_level=logging.DEBUG)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 860, in run
-    asyncio.run(runner())
-  File "/usr/lib/python3.8/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
-    self.run_forever()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
-    self._run_once()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
-    handle._run()
-  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 441, in _run_event
-    await coro(*args, **kwargs)
-  File "main.py", line 49, in on_ready
-    await BirthdayCheck()
-  File "main.py", line 40, in BirthdayCheck
-    await pause.until(future)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/pause/__init__.py", line 71, in until
-    sleep(diff / 2)
-
-[2023-05-08 14:55:28] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 40 seconds.
-Loop thread traceback (most recent call last):
-  File "main.py", line 57, in <module>
-    client.run(token, log_handler=handler, log_level=logging.DEBUG)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 860, in run
-    asyncio.run(runner())
-  File "/usr/lib/python3.8/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
-    self.run_forever()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
-    self._run_once()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
-    handle._run()
-  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 441, in _run_event
-    await coro(*args, **kwargs)
-  File "main.py", line 49, in on_ready
-    await BirthdayCheck()
-  File "main.py", line 40, in BirthdayCheck
-    await pause.until(future)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/pause/__init__.py", line 71, in until
-    sleep(diff / 2)
-
-[2023-05-08 14:55:38] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 50 seconds.
-Loop thread traceback (most recent call last):
-  File "main.py", line 57, in <module>
-    client.run(token, log_handler=handler, log_level=logging.DEBUG)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 860, in run
-    asyncio.run(runner())
-  File "/usr/lib/python3.8/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
-    self.run_forever()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
-    self._run_once()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
-    handle._run()
-  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 441, in _run_event
-    await coro(*args, **kwargs)
-  File "main.py", line 49, in on_ready
-    await BirthdayCheck()
-  File "main.py", line 40, in BirthdayCheck
-    await pause.until(future)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/pause/__init__.py", line 71, in until
-    sleep(diff / 2)
-
-[2023-05-08 14:55:48] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 60 seconds.
-Loop thread traceback (most recent call last):
-  File "main.py", line 57, in <module>
-    client.run(token, log_handler=handler, log_level=logging.DEBUG)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 860, in run
-    asyncio.run(runner())
-  File "/usr/lib/python3.8/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
-    self.run_forever()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
-    self._run_once()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
-    handle._run()
-  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 441, in _run_event
-    await coro(*args, **kwargs)
-  File "main.py", line 49, in on_ready
-    await BirthdayCheck()
-  File "main.py", line 40, in BirthdayCheck
-    await pause.until(future)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/pause/__init__.py", line 71, in until
-    sleep(diff / 2)
-
-[2023-05-08 14:55:58] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 70 seconds.
-Loop thread traceback (most recent call last):
-  File "main.py", line 57, in <module>
-    client.run(token, log_handler=handler, log_level=logging.DEBUG)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 860, in run
-    asyncio.run(runner())
-  File "/usr/lib/python3.8/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
-    self.run_forever()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
-    self._run_once()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
-    handle._run()
-  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 441, in _run_event
-    await coro(*args, **kwargs)
-  File "main.py", line 49, in on_ready
-    await BirthdayCheck()
-  File "main.py", line 40, in BirthdayCheck
-    await pause.until(future)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/pause/__init__.py", line 71, in until
-    sleep(diff / 2)
-
-[2023-05-08 14:56:08] [WARNING ] discord.gateway: Shard ID None heartbeat blocked for more than 80 seconds.
-Loop thread traceback (most recent call last):
-  File "main.py", line 57, in <module>
-    client.run(token, log_handler=handler, log_level=logging.DEBUG)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 860, in run
-    asyncio.run(runner())
-  File "/usr/lib/python3.8/asyncio/runners.py", line 44, in run
-    return loop.run_until_complete(main)
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
-    self.run_forever()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
-    self._run_once()
-  File "/usr/lib/python3.8/asyncio/base_events.py", line 1859, in _run_once
-    handle._run()
-  File "/usr/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 441, in _run_event
-    await coro(*args, **kwargs)
-  File "main.py", line 49, in on_ready
-    await BirthdayCheck()
-  File "main.py", line 40, in BirthdayCheck
-    await pause.until(future)
-  File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/pause/__init__.py", line 71, in until
-    sleep(diff / 2)
-
-[2023-05-08 14:56:10] [ERROR   ] discord.client: Ignoring exception in on_ready
+[2023-06-06 01:41:34] [INFO    ] discord.client: logging in using static token
+[2023-06-06 01:41:34] [DEBUG   ] discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
+[2023-06-06 01:41:34] [DEBUG   ] discord.http: GET /users/@me has found its initial rate limit bucket hash (f7ead6a7674e5a323d93786263b66cb1).
+[2023-06-06 01:41:34] [DEBUG   ] discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1078671444176805958', 'username': 'Happy Bday Bot', 'global_name': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd', 'discriminator': '9082', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'banner_color': None, 'accent_color': None, 'bio': '', 'locale': 'en-US', 'mfa_enabled': False, 'premium_type': 0, 'linked_users': [], 'avatar_decoration': None, 'email': None, 'verified': True}
+[2023-06-06 01:41:35] [DEBUG   ] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me with None has returned 200
+[2023-06-06 01:41:35] [DEBUG   ] discord.http: GET /oauth2/applications/@me has found its initial rate limit bucket hash (f7ead6a7674e5a323d93786263b66cb1).
+[2023-06-06 01:41:35] [DEBUG   ] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me has received {'id': '1078671444176805958', 'name': 'Happy Bday Bot', 'icon': 'db1f1403ef67fd53a1d4e43671017a68', 'description': '', 'type': None, 'bot': {'id': '1078671444176805958', 'username': 'Happy Bday Bot', 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd', 'discriminator': '9082', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration': None, 'display_name': None, 'banner_color': None}, 'summary': '', 'bot_public': True, 'bot_require_code_grant': True, 'verify_key': 'b2b6cd4d0ea0a97f4fa5044431d5144decc793be8cee1e51fdd49198c6c11ccd', 'flags': 565248, 'hook': True, 'owner': {'id': '274059384194072577', 'username': 'Ando_', 'avatar': '287d3ee65ba383245622eee5261b8278', 'discriminator': '1646', 'public_flags': 0, 'flags': 0, 'banner': None, 'accent_color': 3162728, 'global_name': None, 'avatar_decoration': None, 'display_name': None, 'banner_color': '#304268'}, 'team': None}
+[2023-06-06 01:41:35] [DEBUG   ] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
+[2023-06-06 01:41:35] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-us-east1-c-02kg",{"micros":0.0}]']}}
+[2023-06-06 01:41:35] [DEBUG   ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+[2023-06-06 01:41:35] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+[2023-06-06 01:41:35] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'Happy Bday Bot', 'mfa_enabled': False, 'id': '1078671444176805958', 'global_name': None, 'flags': 0, 'email': None, 'discriminator': '9082', 'bot': True, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd'}, 'session_type': 'normal', 'session_id': '81c9aa45870f172c444cced1e30a5efa', 'resume_gateway_url': 'wss://gateway-us-east1-c.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1080340361085464637'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['sydney', 'jakarta', 'singapore', 'hongkong', 'japan'], 'application': {'id': '1078671444176805958', 'flags': 565248}, '_trace': ['["gateway-prd-us-east1-c-02kg",{"micros":101170,"calls":["id_created",{"micros":962,"calls":[]},"session_lookup_time",{"micros":1865,"calls":[]},"session_lookup_finished",{"micros":14,"calls":[]},"discord-sessions-prd-2-215",{"micros":97129,"calls":["start_session",{"micros":75740,"calls":["discord-api-bdfc75df5-68l98",{"micros":70313,"calls":["get_user",{"micros":17609},"get_guilds",{"micros":5020},"send_scheduled_deletion_message",{"micros":19},"guild_join_requests",{"micros":245},"authorized_ip_coro",{"micros":11}]}]},"starting_guild_connect",{"micros":49,"calls":[]},"presence_started",{"micros":10827,"calls":[]},"guilds_started",{"micros":107,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":10358,"calls":[]},"connect_finished",{"micros":10364,"calls":[]},"build_ready",{"micros":20,"calls":[]},"clean_ready",{"micros":1,"calls":[]},"optimize_ready",{"micros":18,"calls":[]},"split_ready",{"micros":2,"calls":[]}]}]}]']}}
+[2023-06-06 01:41:35] [DEBUG   ] discord.client: Dispatching event socket_event_type
+[2023-06-06 01:41:35] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 81c9aa45870f172c444cced1e30a5efa).
+[2023-06-06 01:41:35] [DEBUG   ] discord.client: Dispatching event connect
+[2023-06-06 01:41:35] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'application_command_counts': {'2': 1, '1': 18}, 'default_message_notifications': 0, 'afk_channel_id': None, 'lazy': True, 'preferred_locale': 'en-US', 'unavailable': False, 'icon': None, 'max_video_channel_users': 25, 'presences': [], 'embedded_activities': [], 'premium_progress_bar_enabled': False, 'application_id': None, 'rules_channel_id': None, 'stickers': [], 'description': None, 'splash': None, 'nsfw_level': 0, 'features': [], 'id': '1080340361085464637', 'nsfw': False, 'afk_timeout': 300, 'channels': [{'version': 1677643614074, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '1080340362075308082', 'flags': 0}, {'version': 1677643614077, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '1080340362075308083', 'flags': 0}, {'version': 1677643614079, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1080340362075308082', 'name': 'general', 'last_message_id': '1106563801777700914', 'id': '1080340362075308084', 'flags': 0}, {'version': 1677643614087, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1080340362075308083', 'name': 'General', 'last_message_id': None, 'id': '1080340362075308085', 'flags': 0, 'bitrate': 64000}, {'version': 1677643898959, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '1080340362075308082', 'nsfw': False, 'name': 'bot', 'last_message_id': '1115303869984022578', 'id': '1080341556965417050', 'flags': 0}], 'joined_at': '2023-03-01T04:34:51.564488+00:00', 'roles': [{'version': 1677643614068, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '137411140505153', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1080340361085464637', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1677643873068, 'unicode_emoji': None, 'tags': {'bot_id': '830530156048285716'}, 'position': 1, 'permissions': '66407488', 'name': 'Lofi Radio', 'mentionable': False, 'managed': True, 'id': '1080341448337145939', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1677645291534, 'unicode_emoji': None, 'tags': {'bot_id': '1078671444176805958'}, 'position': 1, 'permissions': '18432', 'name': 'Happy Bday Bot', 'mentionable': False, 'managed': True, 'id': '1080347397621829675', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}], 'max_stage_video_channel_users': 50, 'home_header': None, 'stage_instances': [], 'mfa_level': 0, 'hub_type': None, 'emojis': [], 'guild_scheduled_events': [], 'threads': [], 'vanity_url_code': None, 'voice_states': [], 'explicit_content_filter': 0, 'member_count': 4, 'system_channel_flags': 0, 'system_channel_id': '1080340362075308084', 'incidents_data': None, 'large': False, 'safety_alerts_channel_id': None, 'region': 'deprecated', 'premium_subscription_count': 0, 'owner_id': '274059384194072577', 'verification_level': 0, 'latest_onboarding_question_id': None, 'public_updates_channel_id': None, 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'ZwNr6g'}, 'metadata': {'omitted': False, 'hash': '04G/Dg'}, 'channels': {'omitted': False, 'hash': 'CG9U0A'}}, 'name': 'Test Server', 'premium_tier': 0, 'max_members': 500000, 'banner': None, 'discovery_splash': None, 'members': [{'user': {'username': 'Happy Bday Bot', 'public_flags': 0, 'id': '1078671444176805958', 'global_name': None, 'display_name': None, 'discriminator': '9082', 'bot': True, 'avatar_decoration': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd'}, 'roles': ['1080347397621829675'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2023-03-01T04:34:51.564488+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}]}}
+[2023-06-06 01:41:35] [DEBUG   ] discord.client: Dispatching event socket_event_type
+[2023-06-06 01:41:35] [DEBUG   ] discord.client: Dispatching event guild_available
+[2023-06-06 01:41:37] [DEBUG   ] discord.client: Dispatching event ready
+[2023-06-06 01:41:38] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_MEMBERS_CHUNK', 's': 3, 'op': 0, 'd': {'nonce': '4c7d6929fde6a0942d6eaf2d460431b2', 'members': [], 'guild_id': '1080340361085464637', 'chunk_index': 0, 'chunk_count': 1}}
+[2023-06-06 01:41:38] [DEBUG   ] discord.client: Dispatching event socket_event_type
+[2023-06-06 01:41:38] [DEBUG   ] discord.state: Processed a chunk for 0 members in guild ID 1080340361085464637.
+[2023-06-06 01:41:39] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 4, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2023-06-05T15:41:39.833000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': True, 'member': {'roles': ['1080347397621829675'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2023-03-01T04:34:51.564488+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, 'id': '1115304439927029894', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': "@everyone It's Iqtidar Rahman  birthday today! Wish them a Happy Birthday!", 'components': [], 'channel_id': '1080341556965417050', 'author': {'username': 'Happy Bday Bot', 'public_flags': 0, 'id': '1078671444176805958', 'global_name': None, 'discriminator': '9082', 'bot': True, 'avatar_decoration': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd'}, 'attachments': [{'width': 600, 'url': 'https://cdn.discordapp.com/attachments/1080341556965417050/1115304440342261881/1.gif', 'size': 229908, 'proxy_url': 'https://media.discordapp.net/attachments/1080341556965417050/1115304440342261881/1.gif', 'id': '1115304440342261881', 'height': 600, 'filename': '1.gif', 'content_type': 'image/gif'}], 'guild_id': '1080340361085464637'}}
+[2023-06-06 01:41:39] [DEBUG   ] discord.client: Dispatching event socket_event_type
+[2023-06-06 01:41:39] [DEBUG   ] discord.client: Dispatching event message
+[2023-06-06 01:41:39] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1080341556965417050/messages with <aiohttp.formdata.FormData object at 0x7f58da4b76a0> has returned 200
+[2023-06-06 01:41:39] [DEBUG   ] discord.http: POST /channels/{channel_id}/messages has found its initial rate limit bucket hash (1d3c67957bcdccc6709861c232df8529).
+[2023-06-06 01:41:39] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1080341556965417050/messages has received {'id': '1115304439927029894', 'type': 0, 'content': "@everyone It's Iqtidar Rahman  birthday today! Wish them a Happy Birthday!", 'channel_id': '1080341556965417050', 'author': {'id': '1078671444176805958', 'username': 'Happy Bday Bot', 'global_name': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd', 'discriminator': '9082', 'public_flags': 0, 'bot': True, 'avatar_decoration': None}, 'attachments': [{'id': '1115304440342261881', 'filename': '1.gif', 'size': 229908, 'url': 'https://cdn.discordapp.com/attachments/1080341556965417050/1115304440342261881/1.gif', 'proxy_url': 'https://media.discordapp.net/attachments/1080341556965417050/1115304440342261881/1.gif', 'width': 600, 'height': 600, 'content_type': 'image/gif'}], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': True, 'tts': False, 'timestamp': '2023-06-05T15:41:39.833000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+[2023-06-06 01:41:39] [ERROR   ] discord.client: Ignoring exception in on_ready
 Traceback (most recent call last):
   File "/mnt/c/Users/ander/OneDrive/Desktop/EnactusBot/lib/python3.8/site-packages/discord/client.py", line 441, in _run_event
     await coro(*args, **kwargs)
-  File "main.py", line 49, in on_ready
-    await BirthdayCheck()
-  File "main.py", line 40, in BirthdayCheck
-    await pause.until(future)
-TypeError: object NoneType can't be used in 'await' expression
-[2023-05-08 14:56:10] [DEBUG   ] discord.gateway: Timed out receiving packet. Attempting a reconnect.
-[2023-05-08 14:56:10] [DEBUG   ] discord.client: Got a request to RESUME the websocket.
-[2023-05-08 14:56:10] [DEBUG   ] discord.client: Dispatching event disconnect
-[2023-05-08 14:56:10] [DEBUG   ] discord.gateway: Created websocket connected to wss://gateway-us-east1-c.discord.gg
-[2023-05-08 14:56:10] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-us-east1-c-tzc7",{"micros":0.0}]']}}
-[2023-05-08 14:56:10] [DEBUG   ] discord.gateway: Shard ID None has sent the RESUME payload.
-[2023-05-08 14:56:10] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2023-05-08 14:56:10] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 9, 'd': False}
-[2023-05-08 14:56:10] [INFO    ] discord.gateway: Shard ID None session has been invalidated.
-[2023-05-08 14:56:10] [DEBUG   ] discord.client: Got a request to IDENTIFY the websocket.
-[2023-05-08 14:56:10] [DEBUG   ] discord.client: Dispatching event disconnect
-[2023-05-08 14:56:11] [DEBUG   ] discord.gateway: Created websocket connected to wss://gateway-us-east1-c.discord.gg
-[2023-05-08 14:56:11] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-us-east1-c-4961",{"micros":0.0}]']}}
-[2023-05-08 14:56:16] [DEBUG   ] discord.gateway: Shard ID None has sent the IDENTIFY payload.
-[2023-05-08 14:56:16] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
-[2023-05-08 14:56:16] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'Happy Bday Bot', 'mfa_enabled': False, 'id': '1078671444176805958', 'global_name': None, 'flags': 0, 'email': None, 'display_name': None, 'discriminator': '9082', 'bot': True, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd'}, 'session_type': 'normal', 'session_id': '5889f80364c593c627cf0143cd134da1', 'resume_gateway_url': 'wss://gateway-us-east1-c.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1080340361085464637'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['sydney', 'singapore', 'hongkong', 'japan', 'india'], 'application': {'id': '1078671444176805958', 'flags': 565248}, '_trace': ['["gateway-prd-us-east1-c-4961",{"micros":101830,"calls":["id_created",{"micros":1576,"calls":[]},"session_lookup_time",{"micros":2847,"calls":[]},"session_lookup_finished",{"micros":15,"calls":[]},"discord-sessions-prd-2-170",{"micros":97027,"calls":["start_session",{"micros":53412,"calls":["discord-api-785656c5b6-bf9f4",{"micros":45432,"calls":["get_user",{"micros":13023},"get_guilds",{"micros":4736},"send_scheduled_deletion_message",{"micros":14},"guild_join_requests",{"micros":2},"authorized_ip_coro",{"micros":16}]}]},"starting_guild_connect",{"micros":50,"calls":[]},"presence_started",{"micros":249,"calls":[]},"guilds_started",{"micros":72,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":43176,"calls":[]},"connect_finished",{"micros":43181,"calls":[]},"build_ready",{"micros":29,"calls":[]},"clean_ready",{"micros":30,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":2,"calls":[]}]}]}]']}}
-[2023-05-08 14:56:16] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2023-05-08 14:56:16] [INFO    ] discord.gateway: Shard ID None has connected to Gateway (Session ID: 5889f80364c593c627cf0143cd134da1).
-[2023-05-08 14:56:16] [DEBUG   ] discord.client: Dispatching event connect
-[2023-05-08 14:56:16] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'afk_timeout': 300, 'stickers': [], 'icon': None, 'discovery_splash': None, 'guild_scheduled_events': [], 'large': False, 'member_count': 3, 'members': [{'user': {'username': 'Happy Bday Bot', 'public_flags': 0, 'id': '1078671444176805958', 'global_name': None, 'display_name': None, 'discriminator': '9082', 'bot': True, 'avatar_decoration': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd'}, 'roles': ['1080347397621829675'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2023-03-01T04:34:51.564488+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}], 'joined_at': '2023-03-01T04:34:51.564488+00:00', 'embedded_activities': [], 'preferred_locale': 'en-US', 'region': 'deprecated', 'system_channel_id': '1080340362075308084', 'public_updates_channel_id': None, 'presences': [], 'description': None, 'hub_type': None, 'voice_states': [], 'vanity_url_code': None, 'id': '1080340361085464637', 'premium_progress_bar_enabled': False, 'rules_channel_id': None, 'lazy': True, 'nsfw': False, 'application_command_counts': {'2': 1, '1': 18}, 'verification_level': 0, 'mfa_level': 0, 'nsfw_level': 0, 'guild_hashes': {'version': 1, 'roles': {'omitted': False, 'hash': 'ZwNr6g'}, 'metadata': {'omitted': False, 'hash': '04G/Dg'}, 'channels': {'omitted': False, 'hash': 'Og4+Yw'}}, 'unavailable': False, 'afk_channel_id': None, 'threads': [], 'owner_id': '274059384194072577', 'banner': None, 'features': [], 'incidents_data': None, 'max_video_channel_users': 25, 'stage_instances': [], 'default_message_notifications': 0, 'premium_tier': 0, 'application_id': None, 'channels': [{'version': 1677643614074, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Text Channels', 'id': '1080340362075308082', 'flags': 0}, {'version': 1677643614077, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Voice Channels', 'id': '1080340362075308083', 'flags': 0}, {'version': 1677643614079, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1080340362075308082', 'name': 'general', 'last_message_id': '1080347398372597800', 'id': '1080340362075308084', 'flags': 0}, {'version': 1677643614087, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1080340362075308083', 'name': 'General', 'last_message_id': None, 'id': '1080340362075308085', 'flags': 0, 'bitrate': 64000}, {'version': 1677643898959, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 1, 'permission_overwrites': [], 'parent_id': '1080340362075308082', 'nsfw': False, 'name': 'bot', 'last_message_id': '1104994635153158185', 'id': '1080341556965417050', 'flags': 0}], 'max_members': 500000, 'roles': [{'version': 1677643614068, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '137411140505153', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1080340361085464637', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1677643873068, 'unicode_emoji': None, 'tags': {'bot_id': '830530156048285716'}, 'position': 1, 'permissions': '66407488', 'name': 'Lofi Radio', 'mentionable': False, 'managed': True, 'id': '1080341448337145939', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}, {'version': 1677645291534, 'unicode_emoji': None, 'tags': {'bot_id': '1078671444176805958'}, 'position': 1, 'permissions': '18432', 'name': 'Happy Bday Bot', 'mentionable': False, 'managed': True, 'id': '1080347397621829675', 'icon': None, 'hoist': False, 'flags': 0, 'color': 0}], 'explicit_content_filter': 0, 'emojis': [], 'splash': None, 'safety_alerts_channel_id': None, 'system_channel_flags': 0, 'home_header': None, 'name': 'Test Server', 'premium_subscription_count': 0, 'latest_onboarding_question_id': None, 'max_stage_video_channel_users': 50}}
-[2023-05-08 14:56:16] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2023-05-08 14:56:16] [DEBUG   ] discord.client: Dispatching event guild_available
-[2023-05-08 14:56:18] [DEBUG   ] discord.client: Dispatching event ready
-[2023-05-08 14:56:19] [DEBUG   ] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'MESSAGE_CREATE', 's': 3, 'op': 0, 'd': {'type': 0, 'tts': False, 'timestamp': '2023-05-08T04:56:20.019000+00:00', 'referenced_message': None, 'pinned': False, 'mentions': [], 'mention_roles': [], 'mention_everyone': False, 'member': {'roles': ['1080347397621829675'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2023-03-01T04:34:51.564488+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'avatar': None}, 'id': '1104995177019482222', 'flags': 0, 'embeds': [], 'edited_timestamp': None, 'content': "It's Jin Woo Lee @Jin#4449  birthday today! Wish them a Happy Birthday!", 'components': [], 'channel_id': '1080341556965417050', 'author': {'username': 'Happy Bday Bot', 'public_flags': 0, 'id': '1078671444176805958', 'global_name': None, 'display_name': None, 'discriminator': '9082', 'bot': True, 'avatar_decoration': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd'}, 'attachments': [{'width': 600, 'url': 'https://cdn.discordapp.com/attachments/1080341556965417050/1104995176792993792/1.gif', 'size': 229908, 'proxy_url': 'https://media.discordapp.net/attachments/1080341556965417050/1104995176792993792/1.gif', 'id': '1104995176792993792', 'height': 600, 'filename': '1.gif', 'content_type': 'image/gif'}], 'guild_id': '1080340361085464637'}}
-[2023-05-08 14:56:19] [DEBUG   ] discord.client: Dispatching event socket_event_type
-[2023-05-08 14:56:19] [DEBUG   ] discord.client: Dispatching event message
-[2023-05-08 14:56:19] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1080341556965417050/messages with <aiohttp.formdata.FormData object at 0x7f0c4a744850> has returned 200
-[2023-05-08 14:56:19] [DEBUG   ] discord.http: POST https://discord.com/api/v10/channels/1080341556965417050/messages has received {'id': '1104995177019482222', 'type': 0, 'content': "It's Jin Woo Lee @Jin#4449  birthday today! Wish them a Happy Birthday!", 'channel_id': '1080341556965417050', 'author': {'id': '1078671444176805958', 'username': 'Happy Bday Bot', 'global_name': None, 'display_name': None, 'avatar': '6b2954d5c3f8472060cc4db99fae5cfd', 'discriminator': '9082', 'public_flags': 0, 'bot': True, 'avatar_decoration': None}, 'attachments': [{'id': '1104995176792993792', 'filename': '1.gif', 'size': 229908, 'url': 'https://cdn.discordapp.com/attachments/1080341556965417050/1104995176792993792/1.gif', 'proxy_url': 'https://media.discordapp.net/attachments/1080341556965417050/1104995176792993792/1.gif', 'width': 600, 'height': 600, 'content_type': 'image/gif'}], 'embeds': [], 'mentions': [], 'mention_roles': [], 'pinned': False, 'mention_everyone': False, 'tts': False, 'timestamp': '2023-05-08T04:56:20.019000+00:00', 'edited_timestamp': None, 'flags': 0, 'components': [], 'referenced_message': None}
+  File "main.py", line 60, in on_ready
+    t = t + datetime.timedelta(minute=1)
+TypeError: 'minute' is an invalid keyword argument for __new__()

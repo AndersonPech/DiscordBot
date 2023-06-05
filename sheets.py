@@ -6,9 +6,9 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
-SHEETS_ID = '17d-lf_XF3HuBT0oHL7ji8p5U8rqX3y9cF6swKrXTexs'
+SHEETS_ID = '1LV5jptQzsFM9RNdUX-hLir7EnPwPIPOMUOWo-moC8b8'
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-SAMPLE_RANGE_NAME = 'Bday'
+SAMPLE_RANGE_NAME = 'Bday + Discord + Name'
 
 
 
@@ -41,7 +41,6 @@ def fetch_data(date):
         sheet = service.spreadsheets()
         result = sheet.values().get(spreadsheetId=SHEETS_ID, range=SAMPLE_RANGE_NAME).execute()
         values = result.get('values', [])
-
         if not values:
             print('No data found.')
             return
