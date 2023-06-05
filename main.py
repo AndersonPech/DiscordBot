@@ -57,7 +57,7 @@ class MyClient(discord.Client):
         while (1):
             await BirthdayCheck()
             t = datetime.datetime.today()
-            t = t + datetime.timedelta(minute=1)
+            t = t + datetime.timedelta(days=1)
             future = datetime.datetime(t.year, t.month, t.day, t.hour, t.minute, t.second)
             print(future)
             pause.until(future)
